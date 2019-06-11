@@ -4,20 +4,47 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Robot Wars</title>
+  <title>Knight Wars</title>
 
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <script src="js/scripts.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script src="assets/javascript/game.js"></script>
 
 </head>
 
 <body>
-  
-    <div id="gameContainer">
-        
-    </div>
+    <div id="gameContainer"></div>
+    <div id="moneyCount"></div>
+    <button id="farmButton">Farm</button>
+    <button id="marketButton">Market</button>
+    <button id="castleButton">Castle</button>
+    <!-- <button id="farmerButton">Farmer</button>
+    <button id="knightButton">Knight</button> -->
+    <button id="endTurn">End Turn</button>
 
+    <div>
+      Game Rules:
+      <ul>
+        <li>To build a building, press the button labelled with the building you want, then click a spot on the board (make sure you have enough money!)</li>
+        <li>Farms create farmers every few turns</li>
+        <li>Farmers move up and down until they reach a market</li>
+        <li>When a farmer reaches a market they generate money for the player that owns them</li>
+        <li>The further the farmer travelled to get to the market, the more money they make</li>
+        <li>it is reccomended to start the game by placing a farm and market on a column</li>
+        <li>Castles create knights every few turns</li>
+        <li>Knights move forward and generate money by pillaging buildings or killing farmers</li>
+        <li>When a knight reaches the end of the board, your opponent loses money</li>
+        <li>When a player has negative money, they lose the game</li>
+        <li>You cannot build on spaces you do not own</li>
+        <li>A player owns all the spaces up to the furthest they own plus two, unless there is a conflict</li>
+      </ul>
+    </div>
 </body>
+
 </html>
